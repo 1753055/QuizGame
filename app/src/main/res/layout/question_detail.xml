@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/bubblebobble"
+        android:text="QUESTION DETAIL"
+        android:textAlignment="center"
+        android:textColor="@color/lightpink"
+        android:textSize="37dp" />
+
+
+    <EditText
+        android:id="@+id/checkquestion"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_above="@id/checkchoices"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/textView4"
+        android:hint="Question"
+        android:background="@drawable/question"
+        android:fontFamily="@font/bubblebobble"
+        android:textColor="#000"
+        android:padding="40dp"
+        android:textSize="20sp"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkchoices"
+        android:layout_above="@+id/checkcategory">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:weightSum="2"
+            >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_weight="1"
+                >
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/firebase_button"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/checkrb1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/checkchoice1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="First choice"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/bubblebobble"
+                        tools:layout_deleteor_absoluteX="-1dp"
+                        tools:layout_deleteor_absoluteY="214dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_weight="1"
+                    android:background="@drawable/firebase_button"
+                    >
+                    <RadioButton
+                        android:id="@+id/checkrb2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <EditText
+                        android:id="@+id/checkchoice2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Second choice"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/bubblebobble"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_weight="1"
+                >
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/firebase_button"
+                    >
+                    <RadioButton
+                        android:id="@+id/checkrb3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <EditText
+                        android:id="@+id/checkchoice3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Third choice"
+                        android:layout_weight="1"
+
+                        android:fontFamily="@font/bubblebobble"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/firebase_button"
+                    >
+                    <RadioButton
+                        android:id="@+id/checkrb4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <EditText
+                        android:id="@+id/checkchoice4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Fourth choice"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/bubblebobble"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RadioGroup>
+
+
+
+    <EditText
+        android:id="@+id/checkcategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Category"
+        android:background="@drawable/firebase_button"
+        android:fontFamily="@font/bubblebobble"
+        android:layout_above="@id/checkhardlevel"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        />
+
+    <EditText
+        android:id="@+id/checkhardlevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hard level"
+        android:inputType="number"
+        android:background="@drawable/firebase_button"
+        android:fontFamily="@font/bubblebobble"
+        android:layout_above="@id/delete"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        />
+
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="34dp"
+        android:layout_marginBottom="180dp"
+        android:background="@drawable/firebase_button"
+        android:fontFamily="@font/bubblebobble"
+        android:text="DELETE" />
+    <Button
+        android:id="@+id/accept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/delete"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="180dp"
+        android:background="@drawable/firebase_button"
+        android:fontFamily="@font/bubblebobble"
+        android:text="ACCEPT" />
+
+</RelativeLayout>

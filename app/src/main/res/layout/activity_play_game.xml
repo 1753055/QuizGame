@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".PlayGame"
+    android:background="@drawable/background"
+    >
+
+    <Button
+        android:id="@+id/choice1"
+        android:layout_width="204dp"
+        android:layout_height="125dp"
+        android:background="@drawable/choicebutton"
+        android:layout_above="@id/choice3"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/choice3"
+        android:layout_width="204dp"
+        android:layout_height="125dp"
+        android:background="@drawable/choicebutton"
+
+        android:layout_alignParentBottom="true"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/choice4"
+        android:layout_width="fill_parent"
+        android:layout_height="125dp"
+        android:layout_toRightOf="@+id/choice3"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/choicebutton"
+
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/choice2"
+        android:layout_width="204dp"
+        android:layout_height="125dp"
+        android:layout_above="@+id/choice4"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="-120dp"
+        android:background="@drawable/choicebutton"
+
+        android:layout_toRightOf="@+id/choice1"
+        android:text="Button" />
+
+    <TextView
+        android:id="@+id/question"
+        android:background="@drawable/question"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/number"
+        android:gravity="center"
+
+        android:textSize="50dp"
+        android:text="TextView" />
+
+
+    <Button
+        android:id="@+id/pause"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+
+        android:background="@drawable/setting_button"
+        android:layout_gravity="right|top"
+        />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="166dp"
+        android:layout_height="55dp"
+        android:layout_above="@id/choice1"
+
+        android:background="@drawable/number"
+        android:gravity="center|left"
+        android:text="TextView"
+        android:textSize="20dp" />
+
+</RelativeLayout>

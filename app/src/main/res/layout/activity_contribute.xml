@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/sounddc"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/setting_button"
+            android:layout_gravity="right|top"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+            <ImageView android:src="@drawable/firebase_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+               android:layout_weight="1"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="37dp"
+                android:gravity="center"
+                android:layout_above="@id/question"
+                android:text="Contribute your question"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/bubblebobble"
+                android:textColor="@color/lightpink"
+                />
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <EditText
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_above="@id/choices"
+        android:hint="Question"
+        android:background="@drawable/question"
+        android:fontFamily="@font/bubblebobble"
+        android:textColor="#000"
+        android:padding="40dp"
+        android:textSize="20sp"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/choices"
+        android:layout_above="@+id/category">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:weightSum="2"
+        >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/firebase_button"
+            >
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/choice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="First choice"
+            android:layout_weight="1"
+            android:fontFamily="@font/bubblebobble"
+            tools:layout_editor_absoluteX="-1dp"
+            tools:layout_editor_absoluteY="214dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_weight="1"
+            android:background="@drawable/firebase_button"
+            >
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/choice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Second choice"
+            android:layout_weight="1"
+            android:fontFamily="@font/bubblebobble"
+ />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/firebase_button"
+            >
+
+            <RadioButton
+                android:id="@+id/rb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/choice3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Third choice"
+            android:layout_weight="1"
+
+            android:fontFamily="@font/bubblebobble"
+  />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/firebase_button"
+            >
+
+            <RadioButton
+                android:id="@+id/rb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/choice4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Fourth choice"
+            android:layout_weight="1"
+            android:fontFamily="@font/bubblebobble"
+  />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+    </RadioGroup>
+
+
+
+    <EditText
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Category"
+        android:background="@drawable/firebase_button"
+        android:fontFamily="@font/bubblebobble"
+        android:layout_above="@id/hardlevel"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        />
+
+    <EditText
+        android:id="@+id/hardlevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hard level"
+        android:inputType="number"
+        android:background="@drawable/firebase_button"
+        android:fontFamily="@font/bubblebobble"
+        android:layout_above="@id/submit"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+ />
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="34dp"
+        android:layout_marginBottom="50dp"
+        android:text="Submit"
+        android:background="@drawable/firebase_button"
+        android:fontFamily="@font/bubblebobble"
+ />
+
+
+</RelativeLayout>

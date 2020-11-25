@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+    android:background="@drawable/background"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+
+        <Button
+            android:id="@+id/toggleButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/setting_button"
+            android:layout_gravity="right|top"
+            />
+
+
+        <ImageView android:src="@drawable/firebase_icon"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal" />
+
+
+
+
+        <Button
+            android:id="@+id/newgame"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:background="@drawable/firebase_button"
+            android:drawableLeft="@drawable/iconnewgame"
+            android:fontFamily="@font/bubblebobble"
+            android:padding="12dp"
+            android:scaleType="fitXY"
+            android:text="New game"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/contribute"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/firebase_button"
+
+            android:drawableLeft="@drawable/iconcontribute"
+            android:fontFamily="@font/bubblebobble"
+            android:padding="12dp"
+            android:text="Contribute"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/highscore"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/firebase_button"
+            android:drawableLeft="@drawable/iconhighscore"
+
+            android:fontFamily="@font/bubblebobble"
+            android:padding="12dp"
+            android:text="Highscore"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/quit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/firebase_button"
+            android:drawableLeft="@drawable/iconexit"
+            android:fontFamily="@font/bubblebobble"
+            android:padding="12dp"
+
+            android:text="Quit"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+</ScrollView>
